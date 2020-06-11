@@ -1,5 +1,5 @@
 function generateTemp() {
-  return Math.floor(Math.random() * (27 - 23)) + 23;
+  return (Math.floor(Math.random() * (260 - 240)) + 240)/10;
 }
 
 function getAllTemperatures() {
