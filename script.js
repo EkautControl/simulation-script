@@ -6,7 +6,7 @@ function send() {
 
   sendToQueue(JSON.stringify(temps));
 
-  setTimeout(send, 2000 * 60);
+  setTimeout(send, 1000 * 60 * 60);
 }
 
 send();
