@@ -5,8 +5,6 @@ function send() {
   const temps = getTemperatures();
 
   sendToQueue(JSON.stringify(temps));
-
-  setTimeout(send, 5000);
 }
 
 send();
