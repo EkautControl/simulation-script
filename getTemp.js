@@ -4,11 +4,12 @@ function generateTemp() {
 
 function getAllTemperatures() {
   const temps = {
-    8: generateTemp(),
+    1: generateTemp(),
+    5: generateTemp(),
+    6: generateTemp(),
     9: generateTemp(),
     14: generateTemp(),
-    4: generateTemp(),
-    11: generateTemp(),
+    15: generateTemp(),
   };
 
   return temps;
