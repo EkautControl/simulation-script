@@ -1,8 +1,8 @@
 const amqp = require('amqplib/callback_api');
-require('dotenv');
+const { amqpUrl } = require('./config');
 
 function sendToQueue(msg) {
-  amqp.connect(process.env.CLOUDAMQP_URL, (error0, connection) => {
+  amqp.connect(amqpUrl, (error0, connection) => {
     if (error0) {
       throw error0;
     }
